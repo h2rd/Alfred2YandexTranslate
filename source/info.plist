@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>IgorSkrynkovskyy.YandexTranslate</string>
+	<key>connections</key>
+	<dict>
+		<key>945161C8-FAEA-4086-82D2-B357886D0631</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>13944DBC-F218-4CB3-A68A-8ACBCA7AD6A8</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Igor Skrynkvoskyy</string>
+	<key>description</key>
+	<string>Yandex Translate in Alfred command line</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Yandex Translate</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>36</integer>
+				<key>keyword</key>
+				<string>tr</string>
+				<key>runningsubtext</key>
+				<string>Loading...</string>
+				<key>script</key>
+				<string>php -f main.php -- "{query}"</string>
+				<key>subtext</key>
+				<string>Yandex Translate</string>
+				<key>title</key>
+				<string>Enter the word…</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>945161C8-FAEA-4086-82D2-B357886D0631</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>13944DBC-F218-4CB3-A68A-8ACBCA7AD6A8</string>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>13944DBC-F218-4CB3-A68A-8ACBCA7AD6A8</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+		<key>945161C8-FAEA-4086-82D2-B357886D0631</key>
+		<dict>
+			<key>ypos</key>
+			<real>160</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>http://twitter.com/h2rd</string>
+</dict>
+</plist>
